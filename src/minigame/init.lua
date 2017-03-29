@@ -1,0 +1,5 @@
+require "src/minigame/MiniScene"
+require "src/minigame/whac_a_mole/WhacAMole"
+require "src/minigame/tetris/TetrisView"
+require "src/minigame/snake/NibblesView"
+require "src/minigame/snake/Snake"

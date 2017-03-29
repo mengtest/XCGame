@@ -1,0 +1,6 @@
+require "src/core/action_tree/XContext"
+require "src/core/action_tree/XConst"
+require "src/core/action_tree/XNode"
+require "src/core/action_tree/XUnit"
+require "src/core/action_tree/XCommands"
+require "src/core/action_tree/XTree"

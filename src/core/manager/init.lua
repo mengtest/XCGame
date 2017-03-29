@@ -1,0 +1,11 @@
+require "src/core/manager/KECacheMgr"
+require "src/core/manager/KEIdMgr"
+require "src/core/manager/KESettingMgr"
+require "src/core/manager/KEPathFinder"
+require "src/core/manager/KEResManager"
+require "src/core/manager/KEAudioMgr"
+require "src/core/manager/KEWeatherMgr"
+require "src/core/manager/LayerMgr"
+require "src/core/manager/UIManager"
+require "src/core/manager/SceneMgr"
+

@@ -1,0 +1,6 @@
+require "src/utils/UtilTypeCheck"
+require "src/utils/UtilRes"
+require "src/utils/UtilSensitive"
+require "src/utils/UtilCocos"
+require "src/utils/UtilOthers"
+require "src/utils/UtilGame"

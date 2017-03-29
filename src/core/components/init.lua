@@ -1,0 +1,5 @@
+require "src/core/components/compWindow"
+require "src/core/components/compList"
+require "src/core/components/compGrid"
+require "src/core/components/compTree"
+require "src/core/components/compTabGroup"

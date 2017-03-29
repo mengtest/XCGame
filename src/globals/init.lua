@@ -1,0 +1,10 @@
+﻿require "src/globals/consts/ConstKernal"
+require "src/globals/consts/ConstRole"
+require "src/globals/consts/ConstFight"
+require "src/globals/consts/ConstItem"
+require "src/globals/consts/ConstSociety"
+require "src/globals/consts/ConstOthers"
+
+require "src/globals/GlobalVar"
+require "src/globals/GlobalFunction"
+require "src/globals/Director"

@@ -1,0 +1,21 @@
+return {
+	"hero_info", 
+	{
+		{"Uid","number",},
+		{"TypeId","number",},
+		{"UserName","string",},
+		{"iCareer","number",},
+		{"iCountryId","number",},
+		{"iOffice","number",},
+		{"iGrade","number",},
+		{"iVipLevel","number",},
+		{"sName","string",},
+		{"iShapeId","number",},
+		{"CurExp","number",},
+		{"iMoney","number",},
+		{"iDiamond","number",},
+		{"iSmartValue","number",},
+		{"iPrestige","number",},
+		{"iLeadership","number",},
+	}
+}
