@@ -5,4 +5,4 @@ require "src/base/EventSource"
 require "src/base/GlobalEventCenter"
 require "src/base/CCoreObject"
 require "src/base/CDataFace"
-require "src/base/Tree"
+
