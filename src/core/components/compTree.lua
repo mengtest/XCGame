@@ -7,13 +7,17 @@ local ICON_SIZE = 40
 local HALF_ICON_SIZE = 20
 local TEXT_WID = 200
 
-clsCompTree = class("clsCompTree", clsScrollView, clsTree)
+clsCompTree = class("clsCompTree", clsScrollView, clsTree, clsCoreObject)
 
+clsCompTree:RegisterEventType("ec_add_node")
+clsCompTree:RegisterEventType("ec_del_node")
+clsCompTree:RegisterEventType("ec_chg_nodeid")
 clsCompTree:RegisterEventType("ec_select_changed")
 
 function clsCompTree:ctor(parent, ListWid, ListHei, bkgImgPath)
 	clsScrollView.ctor(self, parent)
 	clsTree.ctor(self)
+	clsCoreObject.ctor(self)
 	assert(ListWid and ListHei, "这些参数不可为空")
 	
 	self.iListWid = ListWid
@@ -38,6 +42,7 @@ end
 function clsCompTree:OnAddNode(Id, oTreeNode)
 	oTreeNode:SetAttr("_IsExpanded", true)
 	self:Draw()
+	self:FireEvent("ec_add_node", Id, oTreeNode)
 end
 
 function clsCompTree:OnDelNode(Id)
@@ -47,10 +52,12 @@ function clsCompTree:OnDelNode(Id)
 	KE_SafeDelete(self._BtnList[Id])
 	self._BtnList[Id] = nil
 	self:Draw()
+	self:FireEvent("ec_del_node", Id)
 end
 
 function clsCompTree:OnNodeIdChanged(Id, NewId)
 	self:Draw()
+	self:FireEvent("ec_chg_nodeid", Id, NewId)
 end
 
 
